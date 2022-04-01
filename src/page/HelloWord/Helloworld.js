@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './index.less'
 class HelloWord extends React.Component{
     render() {
         return (
@@ -18,7 +18,7 @@ class HelloWord extends React.Component{
 function goLogin() {
     console.log('正在登录');
     setTimeout(()=>{
-        window.localStorage.setItem('token','fkjfajowjdovnbhjbvgawfdwdcmvwjfnja')
+        window.localStorage.setItem('token','fkjfajowjdovnbhjbvgawfdwdcjfnja')
         console.log('登陆成功,token为',window.localStorage.getItem('token'));
     },1000)
 }

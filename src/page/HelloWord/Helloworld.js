@@ -35,6 +35,6 @@ function outLogin() {
         console.log('请重新登录');
         clearTimeout(timer2)
     })
-    window.location.href = 'http://163.com'
+    window.location.href = 'http://163.com' 
 }
 export default HelloWord

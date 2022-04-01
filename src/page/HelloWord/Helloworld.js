@@ -5,8 +5,8 @@ class HelloWord extends React.Component{
         return (
             <div className='container'>
                 <div className='loginContent'>
-                    <input type="text"></input>
-                    <input type="password"></input>
+                    <div><span>用户名：</span><input type="text"></input></div>
+                    <div><span>密码：</span><input type="password"></input></div>
                     <div>
                         <button onClick={goLogin}>登录</button>
                         <button onClick={outLogin}>退出</button>

@@ -16,8 +16,11 @@
     
     
 }
-.container .loginContent input{
+.container .loginContent span{
     display: inline-block;
+    width: 4vw;
+}
+.container .loginContent input{
     margin: auto;
     width: 15vw;
     height: 4vh;
@@ -32,6 +35,9 @@
     background: rgb(0, 122, 204);
     box-shadow: 2px 2px 2px #aaa;
     cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 

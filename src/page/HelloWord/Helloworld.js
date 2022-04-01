@@ -9,6 +9,7 @@ class HelloWord extends React.Component{
                     <input type="password"></input>
                     <div>
                         <button onClick={goLogin}>登录</button>
+                        <button onClick={outLogin}>退出</button>
                     </div>
                 </div>
             </div>
@@ -20,7 +21,11 @@ function goLogin() {
     setTimeout(()=>{
         window.localStorage.setItem('token','fkjfajowjdovnbhjbvgawfdwdcjfnja')
         console.log('登陆成功,token为',window.localStorage.getItem('token'));
-        window.location.href='http://baidu.com'
+        // window.location.href='http://baidu.com'
     },1000)
+}
+function outLogin() {
+    console.log('退出成功');
+    window.localStorage.removeItem('token')
 }
 export default HelloWord

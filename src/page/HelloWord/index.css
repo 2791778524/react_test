@@ -18,4 +18,6 @@
 #root .shopping-list{
     color: #fff;
     background: bisque;
+    padding: 10px;
+    box-sizing: border-box;
 }

@@ -19,6 +19,7 @@
 .container .loginContent span{
     display: inline-block;
     width: 4vw;
+    text-align: right;
 }
 .container .loginContent input{
     margin: auto;

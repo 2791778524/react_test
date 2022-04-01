@@ -32,6 +32,7 @@ function outLogin() {
     timer2 =setTimeout(()=>{
         window.localStorage.removeItem('token')
         console.log('token已删除');
+        console.log('请重新登录');
         clearTimeout(timer2)
     })
 }

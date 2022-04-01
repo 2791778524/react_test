@@ -18,14 +18,19 @@ class HelloWord extends React.Component{
 }
 function goLogin() {
     console.log('正在登录');
-    setTimeout(()=>{
+    let timer1 = setTimeout(()=>{
         window.localStorage.setItem('token','fkjfajowjdovnbhjbvgawfdwdcjfnja')
         console.log('登陆成功,token为',window.localStorage.getItem('token'));
-        // window.location.href='http://baidu.com'
+        window.location.href='http://baidu.com'
+        clearTimeout(timer1)
     },1000)
 }
 function outLogin() {
     console.log('退出成功');
-    window.localStorage.removeItem('token')
+    let timer2 = setTimeout(()=>{
+        window.localStorage.removeItem('token')
+        console.log('token已删除');
+        clearTimeout(timer2)
+    })
 }
 export default HelloWord

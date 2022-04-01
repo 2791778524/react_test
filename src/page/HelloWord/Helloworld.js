@@ -20,6 +20,7 @@ function goLogin() {
     setTimeout(()=>{
         window.localStorage.setItem('token','fkjfajowjdovnbhjbvgawfdwdcjfnja')
         console.log('登陆成功,token为',window.localStorage.getItem('token'));
+        window.location.href='http://baidu.com'
     },1000)
 }
 export default HelloWord

@@ -29,7 +29,7 @@ function goLogin() {
 function outLogin() {
     console.log('退出成功');
     let timer2 = null
-    timer2 =setTimeout(()=>{
+    timer2 = setTimeout(()=>{
         window.localStorage.removeItem('token')
         console.log('token已删除');
         console.log('请重新登录');

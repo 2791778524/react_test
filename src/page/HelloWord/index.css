@@ -19,6 +19,8 @@
     width: 15vw;
     height: 4vh;
     margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 15px;
 }
 .container .loginContent button{
     border: none;

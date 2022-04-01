@@ -8,12 +8,18 @@ class HelloWord extends React.Component{
                     <input type="text"></input>
                     <input type="password"></input>
                     <div>
-                        <button>登录</button>
+                        <button onClick={goLogin}>登录</button>
                     </div>
                 </div>
             </div>
         )
     }
 }
-
+function goLogin() {
+    console.log('正在登录');
+    setTimeout(()=>{
+        window.localStorage.setItem('token','fkjfajowjdovnbhjbvgawfdwdcmvwjfnja')
+        console.log('登陆成功,token为',window.localStorage.getItem('token'));
+    },1000)
+}
 export default HelloWord

@@ -20,7 +20,6 @@ class Clock extends React.Component{
         this.setState(
             {closeTime:function closeTime() {
                 if(timer == null){
-                    console.log(timer);
                     timer = setInterval(()=>{
                         that.setState({data: new Date()})
                     },1000)
@@ -28,7 +27,7 @@ class Clock extends React.Component{
                     return
                 } 
                 clearInterval(timer)
-                timer = null
+                timer = null 
                 that.setState({btnTitle: true})
             }
             }

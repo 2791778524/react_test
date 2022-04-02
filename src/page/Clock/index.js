@@ -37,7 +37,7 @@ class Clock extends React.Component{
     render() {
         return (
             <div id='root'>
-                <div>Hello World</div>
+                <div>Hello React</div>
                 <h2>时间：{this.state.data.toLocaleTimeString()}.</h2>
                 <div className='btn'>
                 <button onClick={this.state.closeTime}>{this.state.btnTitle ? '开始' : '暂停'}</button>

@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#root{
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#root .btn{
+    display: flex;
+}
+#root .btn button{
+    flex:1;
+    height: 3vh;
+}
+#root .btn button:first-child{
+    margin-right: 10px;
+}

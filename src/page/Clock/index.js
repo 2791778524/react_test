@@ -12,9 +12,9 @@ class Clock extends React.Component{
     componentDidMount() {
         let timer = null
         let that = this
-        // timer = setInterval(()=>{
-        //     this.setState({data: new Date()})
-        // },1000)
+        timer = setInterval(()=>{
+            this.setState({data: new Date()})
+        },1000)
         this.setState(
             {closeTime:function closeTime() {
                 if(timer == null){

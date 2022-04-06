@@ -65,4 +65,5 @@ class Header extends React.Component{
         )
     }
 }
+console.log(process.env.REACT_APP_URL)
 export default Header

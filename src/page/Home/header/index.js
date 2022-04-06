@@ -41,9 +41,9 @@ class Header extends React.Component{
             <div className="container">
                 <div className="banner">
                 <ul>
-                    {this.state.data.map(item => {
+                    {this.state.data.map((item, index) => {
                         return(
-                            <li>{item.value}</li>
+                            <li key={index}>{item.value}</li>
                         )
                     })
                     }

@@ -65,5 +65,12 @@ class Header extends React.Component{
         )
     }
 }
-console.log(process.env.REACT_APP_URL)
+function evn(){
+    if(process.env.REACT_APP_TYPE === 'development'){
+        console.log(process.env.REACT_APP_URL);
+    } else {
+        console.log('没有找到信息');
+    }
+}
+evn()
 export default Header

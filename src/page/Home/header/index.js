@@ -69,7 +69,7 @@ function evn(){
     if(process.env.REACT_APP_TYPE === 'development'){
         console.log(process.env.REACT_APP_URL);
     } else {
-        console.log('没有找到信息');
+        console.log('没有找的development的环境变量');
     }
 }
 evn()

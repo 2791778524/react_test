@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+.container{
+    width: 100%;
+}
 .banner{
     width: 100%;
 }
@@ -17,8 +20,21 @@
     line-height: 44px;
     /* box-shadow: 2px 2px 2px #; */
     cursor: pointer;
+    color: #fff;
 }
 .banner ul li:hover{
     background: pink;
-    
+
+}
+.content{
+    display: flex;
+}
+.content .left{
+    width: 20vw;
+}
+.content .center{
+    width: 100%;
+}
+.content .right{
+    width: 20vw;
 }

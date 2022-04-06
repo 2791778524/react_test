@@ -45,14 +45,22 @@ class Header extends React.Component{
                         return(
                             <li>{item.value}</li>
                         )
-                    })}
+                    })
+                    }
                 </ul>
                 <div className="content">
                     <div className="left">left</div>
-                    <div className="center">center</div>
+                    <div className="center">
+                        <div class="center_content">
+                            内容
+                        </div>
+                    </div>
                     <div className="right">right</div>
                 </div>
-            </div>
+                </div>
+                <div class="footer">
+                    尾部
+                </div>
             </div>
         )
     }
